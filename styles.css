@@ -38,7 +38,7 @@ form label {
 }
 
 select {
-  background-color: #dfdfdf;
+  background-color: #fff;
   font-family: "Inter";
 }
 
@@ -47,7 +47,7 @@ select:focus {
 }
 
 button {
-  background-color: #dfdfdf;
+  background-color: #fff;
   padding: 2px 5px 2px;
   border: 1px solid #000;
 }
