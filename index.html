@@ -13,16 +13,17 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="getSongs.js"></script>
+    <script src="getSongs.js"></script>
   </head>
   <body>
     <h1>JSON Song List</h1>
     <main>
       <div id="raw-output"></div>
       <form>
-        <label for="songs">Filter songs by genre:</label>
-        <select name="songs" id="songs">
+        <label for="genres">Filter songs by genre:</label>
+        <select name="genres" id="genres">
           <option hidden disabled selected value>-- select an option --</option>
+          <option value="All">All</option>
           <option value="Pop">Pop</option>
           <option value="Post punk">Post punk</option>
           <option value="Dance music">Dance music</option>
@@ -30,7 +31,12 @@
           <option value="Synth pop">Synth pop</option>
           <option value="Rock and roll">Rock and roll</option>
         </select>
-        <button value="filter" id="filter-button">Filter</button>
+        <input
+          type="button"
+          value="Filter"
+          id="filter-button"
+          onclick="filter()"
+        />
       </form>
       <div id="card-output"></div>
     </main>
