@@ -33,9 +33,10 @@ $(document).ready(() => {
    *had to be outside document.ready bc if declared inside
    it would be wrapped in anonymous event handler and its scope 
    would end with the function */
-const filter = () => {
+const filter = (e) => {
   // get selected
   const genre = $("#genres").val();
+  if (genre == null) return false;
   // get output area and reset
   const cardOutput = document.querySelector("#card-output");
   cardOutput.innerHTML = "";
