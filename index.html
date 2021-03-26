@@ -18,7 +18,21 @@
   <body>
     <h1>JSON Song List</h1>
     <main>
-      <div id="output"></div>
+      <div id="raw-output"></div>
+      <form>
+        <label for="songs">Filter songs by genre:</label>
+        <select name="songs" id="songs">
+          <option hidden disabled selected value>-- select an option --</option>
+          <option value="Pop">Pop</option>
+          <option value="Post punk">Post punk</option>
+          <option value="Dance music">Dance music</option>
+          <option value="Heavy metal">Heavy metal</option>
+          <option value="Synth pop">Synth pop</option>
+          <option value="Rock and roll">Rock and roll</option>
+        </select>
+        <button value="filter" id="filter-button">Filter</button>
+      </form>
+      <div id="card-output"></div>
     </main>
   </body>
 </html>

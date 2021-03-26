@@ -29,11 +29,33 @@ main {
   padding: 1rem 2rem 2rem;
 }
 
-#output {
+form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+form label {
+  font-weight: 600;
+}
+
+select {
+  background-color: #dfdfdf;
+  font-family: "Inter";
+}
+
+select:focus {
+  outline: 0;
+}
+
+button {
+  background-color: #dfdfdf;
+  padding: 2px 5px 2px;
+  border: 1px solid #000;
+}
+
+#card-output {
   display: flex;
   flex-wrap: wrap;
 }
-
 .song-card {
   display: flex;
   flex-direction: column;
