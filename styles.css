@@ -25,47 +25,6 @@ h1 {
   text-underline-position: under;
 }
 
-main {
-  padding: 1rem 2rem 2rem;
-}
-
-form {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-form label {
-  font-weight: 600;
-}
-
-select {
-  background-color: #fff;
-  font-family: "Inter";
-}
-
-select:focus {
-  outline: 0;
-}
-
-button {
-  background-color: #fff;
-  padding: 2px 5px 2px;
-  border: 1px solid #000;
-}
-
-#card-output {
-  display: flex;
-  flex-wrap: wrap;
-}
-.song-card {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-  padding: 1rem;
-  border: 2px solid #000;
-  width: 300px;
-  transition: 0.4s;
-}
-
 /* 
   shake effect by Sarah Drasner: 
   https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
@@ -96,11 +55,56 @@ button {
   }
 }
 
-.song-card:hover {
-  background-color: #000;
-  color: #33ff00;
+#raw-output:hover {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+}
+
+main {
+  padding: 1rem 2rem 2rem;
+}
+
+form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+form label {
+  font-weight: 600;
+}
+
+select {
+  background-color: #fff;
+  font-family: "Inter";
+}
+
+select:focus {
+  outline: 0;
+}
+
+input {
+  background-color: #fff;
+  padding: 2px 5px 2px;
+  border: 1px solid #000;
+}
+
+#card-output {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.song-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #000;
+  width: 300px;
+  transition: 0.4s;
+}
+
+.song-card:hover {
+  background-color: #000;
+  color: #33ff00;
 }
